@@ -1,2 +1,19 @@
-# Task2.1WebHook
-SIT210 Task2.1P - Sending sensor data to ThingSpeak
+## Description
+This project uses an Arduino Nano 33 IoT to collect temperature and light data and send it to ThingSpeak. Webhook allow systems to automatically send data when an event occurs. In the project, the Arduino collects temperature and light data and sends it to ThingSpeak using HTTP requests. This acts similarly to a webhook because data is pushed automatically. Webhooks are used in IoT systems, notificaitons, and automation. In my code, ThingSpeak.writeFields() handles sending the data! 
+
+## Components Used
+- Arduino Nano 33 IoT
+- DHT11 temperature sensor
+- BH1750 light sensor (GY-30)
+-Breadboard and jumper wires
+
+## How it works
+The Arduino reads temperature from the DHT sensor and light intensity from the BH1750 sensor. The data is sent to ThingSpeak every 30 seconds using WiFi.
+
+## ThingSpeak
+The data is displayed on a ThingSpeak channel with two fields:
+- Light
+- Temperature
+
+# Notes
+A BH1750 digital sensor was used instead of an analogue light sensor for more accurate readings
