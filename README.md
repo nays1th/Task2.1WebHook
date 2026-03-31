@@ -1,5 +1,5 @@
 ## Description
-This project uses an Arduino Nano 33 IoT to collect temperature and light data and send it to ThingSpeak. Webhook allow systems to automatically send data when an event occurs. In the project, the Arduino collects temperature and light data and sends it to ThingSpeak using HTTP requests. This acts similarly to a webhook because data is pushed automatically. Webhooks are used in IoT systems, notificaitons, and automation. In my code, ThingSpeak.writeFields() handles sending the data! 
+This project uses an Arduino Nano 33 IoT to collect temperature and light data and send it to ThingSpeak.
 
 ## Components Used
 - Arduino Nano 33 IoT
